@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:xylophone_recorder/colors.dart';
+import 'package:xylophone_recorder/models/xylophone.dart';
 import 'package:xylophone_recorder/xylophone_widget.dart';
 
 class XylophonePage extends StatelessWidget {
+  List<Xylophone> xylophones = [
+    new Xylophone(soundNumber: 1, soundText: 'C', soundColor: AppColors.PURPLE.color)
+  ];
+
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIOverlays([]);
-
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       body: LayoutBuilder(
