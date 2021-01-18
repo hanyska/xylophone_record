@@ -1,22 +1,16 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
-import 'package:xylophone_recorder/colors.dart';
+import 'package:xylophone_recorder/models/xylophone.dart';
 
 class XylophoneWidget extends StatelessWidget {
   final assetsAudioPlayer = AssetsAudioPlayer();
-  final AppColors color;
-  final String text;
-  final int soundNumber;
+  final Xylophone xylophone;
 
-  XylophoneWidget({
-    this.color,
-    this.text,
-    this.soundNumber
-  });
+  XylophoneWidget(this.xylophone);
 
   void playSound() {
     assetsAudioPlayer.open(
-      Audio("assets/sounds/$soundNumber.wav"),
+      Audio(this.xylophone.soundPath),
       autoStart: true,
       showNotification: true,
     );
@@ -29,11 +23,11 @@ class XylophoneWidget extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.zero
         ),
-        color: this.color.color,
+        color: this.xylophone.soundColor,
         child: RotatedBox(
           quarterTurns: -1,
           child: Text(
-            text,
+            this.xylophone.soundText,
             style: TextStyle(
               color: Colors.white
             ),

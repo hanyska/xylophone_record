@@ -4,8 +4,15 @@ import 'package:xylophone_recorder/models/xylophone.dart';
 import 'package:xylophone_recorder/xylophone_widget.dart';
 
 class XylophonePage extends StatelessWidget {
-  List<Xylophone> xylophones = [
-    new Xylophone(soundNumber: 1, soundText: 'C', soundColor: AppColors.PURPLE.color)
+  final List<Xylophone> xylophones = [
+    new Xylophone(soundNumber: 8, soundText: 'C', soundColor: AppColors.PURPLE.color),
+    new Xylophone(soundNumber: 7, soundText: 'D', soundColor: AppColors.DARK_BLUE.color),
+    new Xylophone(soundNumber: 6, soundText: 'E', soundColor: AppColors.LIGHT_BLUE.color),
+    new Xylophone(soundNumber: 5, soundText: 'F', soundColor: AppColors.DARK_GREEN.color),
+    new Xylophone(soundNumber: 4, soundText: 'G', soundColor: AppColors.LIGHT_GREEN.color),
+    new Xylophone(soundNumber: 3, soundText: 'A', soundColor: AppColors.YELLOW.color),
+    new Xylophone(soundNumber: 2, soundText: 'B', soundColor: AppColors.ORANGE.color),
+    new Xylophone(soundNumber: 1, soundText: 'C', soundColor: AppColors.RED.color),
   ];
 
   @override
@@ -16,16 +23,7 @@ class XylophonePage extends StatelessWidget {
         builder: (context, constraints) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              XylophoneWidget(color: AppColors.RED, text: 'C', soundNumber: 8,),
-              XylophoneWidget(color: AppColors.ORANGE, text: 'B', soundNumber: 7,),
-              XylophoneWidget(color: AppColors.YELLOW, text: 'A', soundNumber: 6,),
-              XylophoneWidget(color: AppColors.LIGHT_GREEN, text: 'G', soundNumber: 5,),
-              XylophoneWidget(color: AppColors.DARK_GREEN, text: 'F', soundNumber: 4,),
-              XylophoneWidget(color: AppColors.LIGHT_BLUE, text: 'E', soundNumber: 3,),
-              XylophoneWidget(color: AppColors.DARK_BLUE, text: 'D', soundNumber: 2,),
-              XylophoneWidget(color: AppColors.PURPLE, text: 'C', soundNumber: 1,),
-            ],
+            children: xylophones.map((Xylophone xylophone) => XylophoneWidget(xylophone)).toList()
           );
         },
       ),
