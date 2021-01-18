@@ -5,7 +5,7 @@
         <entry key="assets_audio_player">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../Development/flutter/.pub-cache/hosted/pub.dartlang.org/assets_audio_player-2.0.13+1/lib" />
+              <option value="$PROJECT_DIR$/../../../Development/flutter/.pub-cache/hosted/pub.dartlang.org/assets_audio_player-2.0.13/lib" />
             </list>
           </value>
         </entry>
@@ -320,7 +320,7 @@
       </option>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../Development/flutter/.pub-cache/hosted/pub.dartlang.org/assets_audio_player-2.0.13+1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Development/flutter/.pub-cache/hosted/pub.dartlang.org/assets_audio_player-2.0.13/lib" />
       <root url="file://$PROJECT_DIR$/../../../Development/flutter/.pub-cache/hosted/pub.dartlang.org/assets_audio_player_web-2.0.13+1/lib" />
       <root url="file://$PROJECT_DIR$/../../../Development/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0-nullsafety.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../Development/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0-nullsafety.1/lib" />

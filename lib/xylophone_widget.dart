@@ -24,13 +24,10 @@ class XylophoneWidget extends StatelessWidget {
           borderRadius: BorderRadius.zero
         ),
         color: this.xylophone.soundColor,
-        child: RotatedBox(
-          quarterTurns: -1,
-          child: Text(
-            this.xylophone.soundText,
-            style: TextStyle(
-              color: Colors.white
-            ),
+        child: Text(
+          this.xylophone.soundText,
+          style: TextStyle(
+            color: Colors.white
           ),
         ),
         onPressed: playSound,

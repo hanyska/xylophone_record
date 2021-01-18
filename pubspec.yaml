@@ -11,8 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.0
-  assets_audio_player: ^2.0.13
+  cupertino_icons: 1.0.0
+  assets_audio_player: 2.0.13
 
 dev_dependencies:
   flutter_test:
